@@ -1,0 +1,41 @@
+<div class="footer">
+		<div class="container">
+			<div class="col-md-4 footer-grids">
+				<h3>帅过吴彦祖组</h3>
+				<p>
+				<span style="text-indent:2em;">
+				我们是帅过吴彦祖组，个个都是集美貌与才华于一身的人才！！！<br/>
+				</span>
+				<span style="text-indent:2em;">
+				我们是帅过吴彦祖组，个个都是集美貌与才华于一身的人才！！！<br/>
+				</span>
+				<span style="text-indent:2em;">
+				我们是帅过吴彦祖组，个个都是集美貌与才华于一身的人才！！！<br/>
+				</span>
+				</p>
+			</div>
+			<div class="col-md-3 footer-grids">
+				<h3 style="margin-bottom: 15px;">Contact Us</h3>
+				<p>这是我们帅气的薛大佬</p>
+				<p>
+				<img src="{C('domain.main')}/public/home/images/xxq.jpg" alt="" style="width: 110px;margin-top: 5px;">
+				</p>
+				<div class="footer-bottom" style="margin-top: 10px;">
+					<a href="#"><i class="fa fa-facebook"> </i><span>Facebook</span></a>
+					<a href="#"><i class="fa fa-twitter"> </i><span>Twitter</span></a>
+					<a href="#"><i class="fa fa-google-plus"> </i><span>Google +</span></a>
+					<a href="#"><i class="fa fa-dribbble"> </i><span>Dribbble</span></a>
+				</div>
+			</div>
+			<div class="col-md-5 footer-grids">
+				<h3>相册</h3>
+				{foreach from=$fpictures item='fpicture'}
+				<a  class="footer-img" href="{C('domain.main')}/index.php?p=home&m=photo&a=showList"><img src="{C('domain.main')}/{$fpicture['picture']}" alt="" style="width: 140px;height: 100px;margin-right: 10px;margin-bottom: 5px;"></a>
+				{/foreach}
+			</div>
+			<div class="clearfix"> </div>
+			<div class="footer-copy" style="margin-top: 15px;">
+				<p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://www.17sucai.com/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+			</div>
+		</div>
+	</div>

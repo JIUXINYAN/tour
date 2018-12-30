@@ -1,0 +1,105 @@
+{include file="Common/head.html"}
+<body>
+	<!-- banner -->
+	<div class="banner w3about">
+
+		<!-- header -->
+		{include file="Common/header.html"}
+		<!-- //header --> 
+
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext">
+					<h2>登录</h2>
+				</div> 	 
+			</div>
+		</div>
+		<!-- //banner-text --> 
+	</div>
+	<!-- //banner -->
+	<!-- signIn -->
+	<div class="about">
+		<div class="container"> 
+			<div class="login-form">
+				<form action="{C('domain.main')}/?p=home&m=privilege&a=login" method="post">
+					<div class="styled-input">
+						<input type="text" name="acc" required=""/>
+						<label>账户</label>
+						<span></span>
+					</div>
+					<div class="styled-input">
+						<input type="password" name="pwd" required=""> 
+						<label>密码</label>
+						<span></span>
+					</div> 
+					<div class="wthree-text"> 
+						<ul> 
+							<li>
+								<input type="checkbox" id="brand" name="has7" value="yes">
+								<label for="brand"><span></span>7天免登陆</label>  
+							</li>
+							
+						</ul>
+						<div class="clear"> </div>
+					</div> 
+					<input type="submit" value="登　录">		
+				</form>
+				<p>没有账号?<a href="{C('domain.main')}/?p=home&m=privilege&a=showSignUp" class="sign-in popup-top-anim"> 立即注册</a></p>
+			</div>  
+		</div>
+	</div>
+	<!-- //signIn -->   
+	<!-- footer -->
+	{include file="Common/footer.html"}
+	<!-- //footer --> 
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');  
+		});
+	</script>
+	<!-- //menu js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/move-top.js"></script>
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({
+				scrollTop:$(this.hash).offset().top
+			},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({
+			 easingType: 'easeOutQuart' 
+			});
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{C('domain.main')}/public/home/js/bootstrap.js"></script>
+</body>
+</html>

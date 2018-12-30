@@ -1,0 +1,342 @@
+出错的时间：2018-09-13 19:52:27
+错误的错误码值：21S01
+错误的行号：46
+错误的信息：SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-13 19:56:18
+错误的错误码值：21S01
+错误的行号：46
+错误的信息：SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-13 20:17:57
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-13 20:19:21
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 09:21:26
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 09:26:48
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 09:27:32
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 09:27:51
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 09:28:46
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 11:05:21
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 11:05:30
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 11:13:23
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 11:13:56
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 15:55:02
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1536911701,'爱听歌',1' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 19:42:26
+错误的错误码值：23000
+错误的行号：46
+错误的信息：SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'headimg' cannot be null
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:11:03
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:13:48
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:13:57
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:14:02
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:17:36
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:37:18
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:38:08
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:48:29
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:01
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:02
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:05
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:07
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:09
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:14
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-14 20:49:38
+错误的错误码值：42000
+错误的行号：72
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '$sql' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 09:31:03
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','public/images/20180915093102_4798.jpg,public/images/20180915093102_1082.jpg'' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 09:35:02
+错误的错误码值：42S22
+错误的行号：46
+错误的信息：SQLSTATE[42S22]: Column not found: 1054 Unknown column 'picture' in 'field list'
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 09:44:21
+错误的错误码值：42S22
+错误的行号：46
+错误的信息：SQLSTATE[42S22]: Column not found: 1054 Unknown column 'picture' in 'field list'
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 10:03:45
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 10:04:53
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 10:05:12
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 11:21:02
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:25:41
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:25:42
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:25:43
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:25:44
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:25:45
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:25:46
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:26:28
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 21:26:29
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 22:06:20
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-15 22:06:41
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 18:30:28
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\usr\Study\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:37:21
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','public/admin/upload/img_5b9e5c90abe2720180916213720_8873.jpg')' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:37:22
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' )' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:37:22
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' )' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:37:22
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' )' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:38:56
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','public/admin/upload/img_5b9e5cef95a6920180916213855_9835.jpg')' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:38:57
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' )' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:38:57
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''' )' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-16 21:41:39
+错误的错误码值：42000
+错误的行号：46
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''','')' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================
+出错的时间：2018-09-17 09:10:05
+错误的错误码值：42000
+错误的行号：58
+错误的信息：SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+出错的文件：D:\PHP\project\tour\core\Model.class.php
+==========================================

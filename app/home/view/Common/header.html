@@ -1,0 +1,46 @@
+
+<!-- header -->
+	<div class="header">
+			<div class="container">
+				<div class="header-w3lsrow"> 
+					<div class="menu"> 
+						<div class="toggle"></div> 
+						<ul class="w3nav">
+							<li><a href="{C('domain.main')}/?p=home&m=index&a=showIndex">主页</a></li>
+							<li><a href="{C('domain.main')}/?p=home&m=postcard&a=showList">明信片</a>
+							</li> 
+							<li><a href="{C('domain.main')}/?p=home&m=photo&a=showList">相片</a></li> 
+							<li><a href="{C('domain.main')}/?p=home&m=feedback&a=showAd">意见反馈</a></li>
+						</ul>
+						<div class="clearfix"> </div>
+					</div> 
+					<div class="logo">
+						<h1><a href="{C('domain.main')}/?p=home&m=index&a=showIndex">home</a></h1>
+					</div> 
+
+					{if isset($smarty.cookies.user_id)}
+					<div class="header-right" >
+						<p style="display: inline-block;color: #fff; font-size: 18px;">
+						欢迎 {$smarty.cookies.user_nickname}登陆旅游博客系统</p>&nbsp;
+						<!-- <div style="display: inline-block; background-color: #fff; width: 200px;height: 72px;">
+							<a href="#" class="w3layouts-more" style="" data-toggle="modal" data-target="#myModal">Read More</a>
+						</div> -->
+						<a href="{C('domain.main')}/?p=home&m=privilege&a=logout" name="logout" class="btn btn-default">退出登录</a> 
+					</div>
+
+					{else}
+					<div class="header-right">   
+						<ul>
+							<li><a href="{C('domain.main')}/?p=home&m=privilege&a=showLogin">登录</a></li>
+							<li><a href="{C('domain.main')}/?p=home&m=privilege&a=showSignUp">注册</a></li> 
+						</ul>
+						<div class="clearfix"> </div> 
+					</div>
+					<div class="clearfix"> </div>
+					{/if}
+
+				</div>
+			</div>
+
+		</div>
+<!-- //header --> 

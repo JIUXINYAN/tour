@@ -1,0 +1,277 @@
+{include file="Common/head.html"}
+<body>
+	<!-- banner -->
+	<div class="banner w3about">
+		<!-- header -->
+	{include file="Common/header.html"}
+		<!-- //header --> 
+
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext">
+					<h2 style="font-size: 50px; position: relative;top: 30px;">{$article.title}</h2>
+				</div> 	 
+			</div>
+		</div>
+		<!-- //banner-text --> 
+	</div>
+	<!-- //banner -->
+
+	<!-- about -->
+	<div class="about" style="font-size: 20px;">
+		<div class="container"> 
+			<div class="about-w3ls-row"> 
+				<!-- <div class="col-md-5 about-left">
+					<img width="600" height="400" src="{C('domain.main')}/{$article.picture}" class="img-responsive" alt=""/>
+				</div> -->
+
+				<div class="col-md-7" style="width: 1000px; margin-left: auto;margin-right: auto;float: none;"> 
+					<div class="about-agile-row">
+						<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+							<ul id="myTab" class=" nav-tabs" style="margin-left: auto;margin-right: auto;text-align: center;" role="tablist">
+								<li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">简介</a></li>
+								<li role="presentation"><a href="#carl" role="tab" id="carl-tab" data-toggle="tab" aria-controls="carl">文章</a></li>
+							</ul>
+							<div class="clearfix"> </div>
+							<div id="myTabContent" class="tab-content">
+								<div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+									<div class="tabcontent-grids" style="margin-bottom: 50px;">
+										<p class="about-right" style="text-align: center;">{$article.intro}</p>
+									</div>
+									<div style="text-align: center;">
+										<img src="{C('domain.main')}/{$article.picture}" alt=""/>
+									</div>
+								</div>
+								<div role="tabpanel" class="tab-pane fade" id="carl" aria-labelledby="carl-tab">
+									<div class="tabcontent-grids" style="text-align: center;">
+										<p>{$article.content}</p>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+							</div>
+						</div>
+					</div>
+				</div> 
+				<div class="clearfix"> </div> 
+			</div>
+		</div>
+	</div>
+	<!-- //about -->
+
+	<!-- services -->
+	<div class="services agileits-bar"> 
+		<div class="container">	 
+			<h3 class="w3agileits-title">评论</h3> 
+			<!-- <div class="services-w3ls-row"> 
+				<div class="bar_group"> 
+					<div class='bar_group__bar thin' label='Lorem ipsum &nbsp;&nbsp; 80%' value='200'></div>
+					<div class='bar_group__bar thin' label='Quis nostrud &nbsp;&nbsp; 100%' value='250'></div>
+					<div class='bar_group__bar thin' label='Sed do eiusmod &nbsp;&nbsp; 72%' value='180'></div>
+					<div class='bar_group__bar thin' label='Ut enim adnim &nbsp;&nbsp; 88%' value='220'></div>  
+				</div> 
+				<script src="js/bars.js"></script>
+			</div>	-->
+			<div class=" welcome-w3lleft" style="width: 100%;"> 
+			{if $coms==0}
+				<h4 style="color: #aaa;">快来抢沙发~该文章暂时还没有评论哟~</h4>
+				
+			{else}
+				<h4 style="color: #aaa;">共有{$coms}条评论</h4>
+
+				<!-- Comment -->
+				{foreach from=$comments item='comment'}
+	            <div class="well comment"> <!-- 每个用户 -->
+	             	<div class="comment-meta" style="height: 30px;margin-bottom: 6px;">
+	                	<div class="column"> <!-- 用户信息 -->
+	                  		<span class="comment-autor" style="float:left;" ><i class="fa fa-user"></i> <a href="#">{$comment.user_nickname}</a></span>
+	                	</div>
+	                	<div class="column" style="float: right;"> <!-- 创建时间 -->
+	                 		<span class="comment-date">{date('Y-m-d',$comment.post_date)}</span>
+	               		</div>
+	            	</div>
+	              	<!-- .comment-meta -->
+	              	<div class="comment-body"> <!-- 评论内容 -->
+	                	<p>{$comment.content}</p>
+	              	</div>
+	              	<!-- .comment-body -->
+	            </div>
+	            {/foreach}
+	            <!-- .comment -->
+	        
+
+	            <!-- 分页 -->
+	            <div align="center">
+					<ul class="pagination pagination-lg">
+						<li>
+						{if $now_page==1}
+						<a href="#" aria-label="Previous"><span aria-hidden="true">«</span></a>
+						{else}
+						<a href="{C('domain.main')}/index.php?p=home&m=postcard&a=showArticle&id=13&pa={$now_page-1}" aria-label="Previous"><span aria-hidden="true">«</span></a>
+						{/if}
+						</li>
+						{for $i=1 to $page step 1}
+							<li><a href="{C('domain.main')}/index.php?p=home&m=postcard&a=showArticle&id=13&pa={$i}">{$i}</a></li>
+						{/for}
+						{if $now_page==$page}
+						<li><a href="#" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+						{else}
+						<li><a href="{C('domain.main')}/index.php?p=home&m=postcard&a=showArticle&id=13&pa={$now_page+1}" aria-label="Next"><span aria-hidden="true">»</span></a></li>
+						{/if}
+					</ul>
+				</div>
+	            <!-- 分页结束 -->
+	        {/if}
+
+	            <!-- 发表评论 -->
+				<div class="well" style="margin-top: 50px;">
+		            <h4 class="comment-reply-title" style="color: #aaa;">发布新评论</h4>
+		            <form method="post" id="comment-form" class="comment-form" action="{C('domain.main')}/index.php?p=home&m=postcard&a=pub">
+						<input type="hidden" name="article" value="{$article.id}|{$article.title}"/>
+		                <div class="form-group">
+		                 	<label for="cf_comment" class="sr-only">Comment</label>
+		                  	<textarea name="content" id="cf_comment" class="form-control input-alt" rows="7" placeholder="输入您的评论"></textarea>
+		                </div>            
+		                <p class="form-submit">
+		                {if isset($smarty.session.home)}
+						<!-- 如果用户登录后才允许发表 --> 
+		                <button type="submit" class="btn btn-default" style="width: 100%;">发　布</button>
+		                {else}
+		                您尚未登录！
+		                {/if}
+		                </p>
+		            </form>
+		        </div>
+				<!-- 发表评论 --> 
+			</div> 		
+		</div>	 
+	</div>			
+	<!-- //services -->
+
+	<!-- team -->
+	<div class="team agileits">
+		<div class="team-info">
+			<div class="container">
+				<h3 class="w3agileits-title">Our Team</h3> 
+				<div class="team-row">
+
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style="width: 20%;">
+						<div class="team-agile-img"> 
+							<a href="#"><img src="{C('domain.main')}/public/home/images/xxq.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4>薛贤钦</h4> 
+									<p>总负责人</p>
+								</div>
+							</div>    
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style="width: 20%;">
+						<div class="team-agile-img"> 
+							<a href="#"><img src="{C('domain.main')}/public/home/images/zsx.png" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4>赵善欣</h4> 
+									<p>前台</p>
+								</div>
+							</div>    
+						</div>
+					</div>	
+
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style="width: 20%;">
+						<div class="team-agile-img"> 
+							<a href="#"><img src="{C('domain.main')}/public/home/images/dxl.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4>邓旭亮</h4> 
+									<p>后台</p>
+								</div>
+							</div>    
+						</div>
+					</div>
+
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style="width: 20%;">
+						<div class="team-agile-img"> 
+							<a href="#"><img src="{C('domain.main')}/public/home/images/zly.jpg" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4>朱铃烨</h4> 
+									<p>前台</p>
+								</div>
+							</div>    
+						</div>
+					</div>	
+
+					<div class="col-md-3 col-sm-6 col-xs-6 team-grids" style="width: 20%;">
+						<div class="team-agile-img"> 
+							<a href="#"><img src="{C('domain.main')}/public/home/images/ztc.png" alt="img"></a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h4>詹太川</h4> 
+									<p>后台</p>
+								</div>
+							</div>    
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //team --> 
+
+	<!-- footer -->
+	{include file="Common/footer.html"}
+	<!-- //footer --> 
+
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');  
+		});
+	</script>
+	<!-- //menu js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/move-top.js"></script>
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({
+				scrollTop:$(this.hash).offset().top
+			},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ 
+				easingType: 'easeOutQuart' 
+			});
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{C('domain.main')}/public/home/js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+{include file="Common/head.html"}
+<body> 
+	<!-- banner -->
+	<div class="banner w3about">
+		<!-- header -->
+		{include file="Common/header.html"}
+		<!-- //header --> 
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext">
+					<h2>相片</h2>
+				</div> 	 
+			</div>
+		</div>
+		<!-- //banner-text --> 
+	</div>
+	<!-- //banner -->
+	<!-- gallery -->
+<div class="gallery">
+		<div class="container">  
+			<h3 class="w3agileits-title">Our Trips</h3> 
+			<div class="gallery-grids-top">
+				<div class="gallery-grids">
+
+					
+					<!-- {foreach from=$row item='val'}
+					<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14"> 
+						<a class="example-image-link" href="{$val.picture}" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{$val.picture}"  style="width: 350px;
+    height: 233px;" alt=""/> 
+							<div class="overlay">
+								<h4>{$val.intro}</h4>
+							</div> 
+						</a> 
+					</div>  
+					{/foreach} -->
+
+
+
+					{foreach from=$row key='key' item='val'}
+					{if (($a.$key+1)%5 == 1) ||(($a.$key+1)%5 == 2) || (($a.$key+1)%5 == 3)}
+
+						<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14"  style="width: 350px;height: 233px;"> 
+							<a class="example-image-link" href="{$val.picture}" data-lightbox="example-set" data-title="">
+								<img class="example-image img-responsive" src="{$val.picture}" style="width: 350px;height: 233px;padding-bottom: 20px;"  alt=""/> 
+								<div class="overlay">
+									<h4>{$val.intro}</h4>
+								</div> 
+							</a> 
+						</div>  
+					{elseif (($a.$key+1)%5 == 4) || (($a.$key+1)%5 == 0)}
+
+						<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14" style="width: 540px;height: 360px;" > 
+							<a class="example-image-link" href="{$val.picture}" data-lightbox="example-set" data-title="">
+								<img class="example-image img-responsive" src="{$val.picture}" style="width: 540px;height: 360px;padding-bottom: 20px;"  alt=""/> 
+								<div class="overlay">
+									<h4>{$val.intro}</h4>
+								</div> 
+							</a> 
+						</div>  
+					{/if}
+					{/foreach}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<!-- <div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14">
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/g2.jpg" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/g2.jpg" alt=""/> 
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a> 
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14">
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/g3.jpg" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/g3.jpg" alt=""/> 
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a> 
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 gallery-grid-img gallery-mdl hover ehover14"> 
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/img2.jpg" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/img2.jpg" alt=""/> 
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a>
+					</div>  
+					<div class="col-md-6 col-sm-6 col-xs-6 gallery-grid-img gallery-mdl hover ehover14">
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/img1.jpg" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/img1.jpg" alt=""/>
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a> 
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14"> 
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/img3.jpg" data-lightbox="example-set" data-title="">
+						<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/img3.jpg" alt=""/>
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a> 
+					</div>  
+					<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14">
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/img4.jpg" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/img4.jpg" alt=""/> 
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a> 
+					</div>
+					<div class="col-md-4 col-sm-4 col-xs-6 gallery-grid-img hover ehover14">
+						<a class="example-image-link" href="{C('domain.main')}/public/home/images/g2.jpg" data-lightbox="example-set" data-title="">
+							<img class="example-image img-responsive" src="{C('domain.main')}/public/home/images/g2.jpg" alt=""/>
+							<div class="overlay">
+								<h4>Gallery</h4>
+							</div> 
+						</a>
+					</div> -->	
+					<div class="clearfix"> </div>	
+				</div> 
+			</div> 
+		</div>
+	</div>
+	<!-- //gallery -->   
+	<!-- footer -->
+	{include file="Common/footer.html"}
+	<!-- //footer --> 
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');  
+		});
+	</script>
+	<!-- //menu js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({
+				scrollTop:$(this.hash).offset().top
+			},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({
+			 easingType: 'easeOutQuart' 
+			});
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+</body>
+</html>

@@ -1,0 +1,115 @@
+{include file="Common/head.html"}
+</head>
+<body>
+	<!-- banner -->
+	<div class="banner w3about">
+		<!-- header -->
+		{include file="Common/header.html"}
+		<!-- //header --> 
+
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container"> 
+				<div class="banner-w3lstext">
+					<h2>意见反馈</h2>
+				</div> 	 
+			</div>
+		</div>
+		<!-- //banner-text --> 
+
+	</div>
+	<!-- //banner -->
+
+	<!-- contact -->
+	<!-- <div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158857.72810619872!2d-0.2416818539001213!3d51.528771841011256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2sin!4v1448548788199" allowfullscreen></iframe>
+	</div> -->
+	<div class="contact">
+		<div class="container">
+			<h3 class="w3agileits-title">写信给我</h3> 
+			<div class="contact-info">	
+				<div class="col-md-4 contact-grids">
+					<div class="cnt-address">
+						<h3 class="title1">地址</h3> 
+						<p>xxxxxxxxx
+						</p> 
+						<p>
+							E-mail: <a href="#">www.xxx.@163.com</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-md-8 contact-grids">
+					<h5>对于此网站的意见</h5>
+					<p>好好说！已经是这么优秀的网站了还想提啥要求！好好说！已经是这么优秀的网站了还想提啥要求！好好说！已经是这么优秀的网站了还想提啥要求！好好说！已经是这么优秀的网站了还想提啥要求！</p>		
+					<div class="contact-form">
+						<form action="{C('domain.main')}/index.php?p=home&m=feedback&a=updh" method="post">
+							<textarea name="content" placeholder="意见内容" required=""></textarea> <br> 
+							<p class="form-submit">
+							<!-- 如果用户登录后才允许发表  -->
+							{if isset($smarty.session.home)}
+		                	<button type="submit" class="btn btn-default" style="width: 100%;">发　布</button>
+		                	{else}
+		                	您尚未登录！
+		                	{/if}
+		                	</p>
+						</form> 
+					</div>
+				</div> 
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div> 
+	<!-- //contact --> 
+	<!-- footer -->
+	{include file="Common/footer.html"}
+	<!-- //footer --> 
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');  
+		});
+	</script>
+	<!-- //menu js -->
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/move-top.js"></script>
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({
+				scrollTop:$(this.hash).offset().top
+			},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({
+			 easingType: 'easeOutQuart' 
+			});
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{C('domain.main')}/public/home/js/bootstrap.js"></script>
+</body>
+</html>

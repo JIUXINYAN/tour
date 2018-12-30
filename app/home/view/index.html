@@ -1,0 +1,170 @@
+{include file="Common/head.html"}
+<body> 
+	<!-- banner -->
+	<div class="banner">
+		<!-- header -->
+		{include file="Common/header.html"}
+		<!-- //header --> 
+
+		<!-- banner-text -->
+		<div class="banner-text"> 
+			<div class="container">
+				<div class="flexslider">
+					<ul class="slides" >
+						<li>
+							<div class="banner-w3lstext">
+								<h2>Welcome</h2>
+								<p>背上行囊去远方，那个梦寐以求的目的地。<br>分享你的的旅途</p>
+							</div>
+						</li>
+						<li>
+							<div class="banner-w3lstext">
+								<h3>Perspiciatis</h3>
+								<p>一个背包，几本书,所有喜欢的歌,一张单程车票,一颗潇洒的心。<br>一个人的旅行，在路上遇见最真实的自己。</p>
+							</div>
+						</li>
+						<li>
+							<div class="banner-w3lstext">
+								<h3>Enimipsam</h3>
+								<p>旅游不在乎终点，而是在意途中的人和事还有那些完美的记忆和景色。</p>
+							</div>
+						</li>
+					</ul> 
+				</div> 	
+				<!-- FlexSlider --> 
+				<script defer src="{C('domain.main')}/public/home/js/jquery.flexslider.js"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				</script>
+				<!-- End-slider-script -->
+			</div>
+		</div>
+		<!-- //banner-text --> 
+	</div>
+	<!-- //banner -->
+	<div>
+
+	<!-- modal-about -->
+	<div class="modal bnr-modal fade" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>						
+				</div> 
+				<div class="modal-body modal-spa">
+					<h4>Blanditiis deleniti</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rutrum iaculis enim, non convallis felis mattis at. Donec fringilla lacus eu pretium rutrum. Cras aliquet congue ullamcorper. Etiam mattis eros eu ullamcorper volutpat. Proin ut dui a urna efficitur varius. uisque molestie cursus mi et congue consectetur adipiscing elit cras rutrum iaculis enim, Lorem ipsum dolor sit amet, non convallis felis mattis at. Maecenas sodales tortor ac ligula ultrices dictum et quis urna. Etiam pulvinar metus neque, eget porttitor massa vulputate in. Fusce lacus purus, pulvinar ut lacinia id, sagittis eu mi. Vestibulum eleifend massa sem, eget dapibus turpis efficitur at. Aliquam viverra quis leo et efficitur. Nullam arcu risus, scelerisque quis interdum eget, fermentum viverra turpis. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut At vero eos </p>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<!-- //modal-about --> 
+
+	<!-- news -->
+	<div class="news"> 
+		<div class="container">
+			<h3 class="w3agileits-title">推荐旅游日志</h3>
+			<div class="new-agileinfo">
+				<div class="col-md-4 news-left">
+					<ul id="demo1_thumbs" class="list-inline"> 
+					<!-- 推荐日志1 -->
+					{foreach from=$rows key='rows_key' item='row'}
+						<li style="width:355px;height: 100px;"><a href="{C('domain.main')}/{$row.picture}">
+							
+							<img src="{C('domain.main')}/{$row.picture}" 
+						{if $wh.$rows_key.0>$wh.$rows_key.1}
+						style="width: 100px;"
+						{else}
+						style="height: 100px;"
+						{/if}
+							
+							alt="" data-desoslide-caption="<h3>{$row.title}</h3> {$row.intro} ">
+							<div class="news-w3text">
+								<h4 style="width:150px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">{$row.title}</h4>
+								<h6><i class="fa fa-calendar" aria-hidden="true"></i>{date('d / m / Y',$row.pubtime)}</h6>	
+								<p style="width:230px;height: 40px;overflow:hidden;text-overflow:ellipsis;white-space:normal;">{$row.intro}</p>
+							</div> 
+						</a></li>
+					{/foreach}
+					<!-- //推荐日志1 -->
+					</ul>
+				</div>
+				<script type="text/javascript" src="{C('domain.main')}/public/admin/lib/jquery/1.9.1/jquery.min.js"></script> 
+
+				<div id="demo1_main_image" class="col-md-8  news-right"></div>
+			</div>    
+			<link rel="stylesheet" href="{C('domain.main')}/public/home/css/jquery.desoslide.css">
+			<script src="{C('domain.main')}/public/home/js/jquery.desoslide.js"></script> 
+			<script>
+			$('#demo1_thumbs').desoSlide({
+				main: {
+					container: '#demo1_main_image',
+					cssClass: 'img-responsive'
+				},
+				 effect: 'sideFade',
+				caption: true
+			});
+			</script> 
+		</div>
+	</div>
+	<!-- //news --> 
+
+	<!-- footer -->
+	{include file="Common/footer.html"}
+	<!-- //footer --> 
+	<!-- menu js -->
+	<script>
+		$('.toggle').on('click', function() {
+			$('.menu').toggleClass('open');  
+			$('.w3nav').toggleClass('show-w3nav');  
+			$('.w3nav a').toggleClass('show-w3nav-link');  
+			$('.toggle').toggleClass('close');  
+		});
+	</script>
+	<!-- //menu js -->
+	<script src="{C('domain.main')}/public/home/js/owl.carousel.js"></script>
+	<!-- start-smooth-scrolling -->
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/move-top.js"></script>
+	<script type="text/javascript" src="{C('domain.main')}/public/home/js/easing.js"></script>	
+	<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+			
+			$('html,body').animate({
+				scrollTop:$(this.hash).offset().top
+			},1000);
+				});
+			});
+	</script>
+	<!-- //end-smooth-scrolling -->	
+	<!-- smooth-scrolling-of-move-up -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+			};
+			*/
+			
+			$().UItoTop({ easingType: 'easeOutQuart' });
+			
+		});
+	</script>
+	<!-- //smooth-scrolling-of-move-up --> 
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{C('domain.main')}/public/home/js/bootstrap.js"></script>
+</body>
+</html>
